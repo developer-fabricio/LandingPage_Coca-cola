@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    background: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    clip-path: circle(50% at bottom right);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    max-width: 150px;
+}
+
+.navigation ul {
+    position: relative;
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 100px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .content h1 {
+    color: #FFF;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.container .content h1 span {
+    font-size: 3em;
+    color: red;
+}
+
+.container .content p {
+    color: #FFF;
+}
+
+.container .content a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background: red;
+    color: #FFF;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .content a:hover {
+    transform: translateY(-5px);
+}
+
+.banner-products {
+    position: absolute;
+    right: -50px;
+    bottom: -90px;
+}
+
+footer {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon li {
+    list-style: none;
+}
+
+.icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #121212;
+    transition: 0.3s ease-in-out;
+}
+
+.icon a:hover {
+    transform: translateY(-5px);
+    background-color: red;
+}
+
+.icon li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: invert(1);
+}
